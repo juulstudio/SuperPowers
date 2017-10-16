@@ -1,0 +1,100 @@
+.wrap {
+	text-align: center;
+	padding-top: 200px;
+}
+
+#main-title {
+	color: pink;
+	text-shadow: -4px 0px 8px red;
+}
+
+#main-title:hover {
+	color: lightblue;
+	text-shadow: -4px 0px 8px darkblue;
+}
+
+#main-title {
+	transition: all 2s;
+}
+
+#sub-title {
+	color: #FFEA95;
+	font-size: 20px;
+	padding-top: 20px;
+}
+
+#sub-title:hover {
+	transform: scale(3);
+	padding: 40px;
+	color: #7948C7;
+}
+
+#sub-title {
+	transition: all 2s;
+}
+
+#header-color {
+	color: #0D178C;
+	font-size: 50px;
+	padding-bottom: 40px;
+}
+
+#translate {
+	background-color: pink;
+	color: purple;
+	text-decoration: none;
+}
+
+#translate:hover ~.img-container #ww-logo {
+	/* we want the wonder woman logo to move */
+	transform: translateX(-360px) translateY(-360px);
+}
+
+#translate {
+	transition: all 2s;
+}
+
+#scale {
+	background-color: lightblue;
+	color: purple;
+	text-decoration: none;
+	opacity: 1;
+}
+
+#scale:hover ~.img-container #ww-logo {
+	transform: scale(15);
+	opacity: 0.1;
+}
+
+#scale {
+	transition: all 2s;
+}
+
+#rotate {
+	background-color: lightgreen;
+	color: purple;
+	text-decoration: none;
+}
+
+#rotate:hover ~.img-container #ww-logo {
+	transform: rotate(360deg);
+}
+
+#ww-logo {
+	transition: transform 2s;
+}
+
+h1, h2, a {
+	font-family: helvetica;
+}
+
+a {
+	padding: 15px;
+	margin: 20px;
+	border-style: dotted;
+}
+
+#ww-logo {
+	width: 300px;
+	padding: 90px;
+}
